@@ -16,10 +16,6 @@ article {
   display: none;
 }
 
-.esquinero {
-  display: none;
-}
-
 .palabra1 {
   display: none;
 }
@@ -84,46 +80,43 @@ article {
 @media (min-width: 768px) and (max-width:1000px) {
   .logo {
     display: flex;
-    width: 92%;
+    width: 150%;
     height: auto;
-    margin: 20%;
+    margin: 7% -44%;
     align-items: center;
   }
 
   .ash {
     display: flex;
-    margin: 136px 10px 10px 80px;
+    margin: 70% 5% 0% 9%;
     z-index: 2;
-    width: 64%;
+    width: 90%;
     height: auto;
   }
 
-  .esquinero {
+   .palabra1 {
     display: flex;
-    z-index: 1;
-    width: 70%;
-  }
-
-  .palabra1 {
-    display: flex;
-    font-size: 16px;
+    font-size: 13px;
     font-family: "Jost";
     color: #3A5CA8;
     font-weight: bold;
+    margin: 12% 5%;
   }
 
   .palabra2 {
     display: flex;
     width: 153px;
+    margin: 24% -109%;
   }
 
   .palabra3 {
     display: flex;
-    font-size: 16px;
+    font-size: 20px;
     font-family: "Jost";
     color: #3A5CA8;
     font-weight: 900;
-  }
+    margin: 0% 5%;
+}
 
   .bienvenida {
     display: flex;
@@ -131,7 +124,7 @@ article {
     justify-content: start;
     align-items: flex-start;
     max-width: 40%;
-    width: 350px;
+    width: 2000px;
     background-color: rgba(255, 255, 255, .5);
     height: 153px;
     border-radius: 0 0 100% 0;
@@ -141,46 +134,43 @@ article {
 @media only screen and (min-width:1024px) {
   .logo {
     display: flex;
-    width: 85%;
+    width: 118%;
     height: auto;
-    margin: 10px 150px;
+    margin: 7% -32%;
     align-items: center;
   }
 
   .ash {
     display: flex;
-    margin: 98px 5px 10px 120px;
+    margin: 33% 5% 12% 9%;
     z-index: 2;
-    width: 64%;
+    width: 90%;
     height: auto;
   }
 
-  .esquinero {
+   .palabra1 {
     display: flex;
-    z-index: 1;
-    width: 70%;
-  }
-
-  .palabra1 {
-    display: flex;
-    font-size: 16px;
+    font-size: 13px;
     font-family: "Jost";
     color: #3A5CA8;
     font-weight: bold;
+    margin: 12% 5%;
   }
 
   .palabra2 {
     display: flex;
-    width: 153px;
+    width: 162px;
+    margin: 29% -144%;
   }
 
   .palabra3 {
     display: flex;
-    font-size: 16px;
+    font-size: 20px;
     font-family: "Jost";
     color: #3A5CA8;
     font-weight: 900;
-  }
+    margin: 0% 5%;
+}
 
   .bienvenida {
     display: flex;
@@ -188,7 +178,7 @@ article {
     justify-content: start;
     align-items: flex-start;
     max-width: 40%;
-    width: 350px;
+    width: 2000px;
     background-color: rgba(255, 255, 255, .5);
     height: 153px;
     border-radius: 0 0 100% 0;
