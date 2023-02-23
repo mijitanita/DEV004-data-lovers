@@ -11,9 +11,10 @@ function mostrarPokemon(arreglo){
  
     contenedorPokemon.innerHTML += 
   `<section class="cardImage">
-       <h5>${arreglo[i].num}</h5>
+  <section class="rectanguloInterno">
+       <h5 class="num">${arreglo[i].num}</h5>
        <h1>${arreglo[i].name}</h1>
-       <h5></h5> Num: ${arreglo[i].generation.num}</h5>
+       <h5> Num: ${arreglo[i].generation.num}</h5>
        <h5> Name: ${arreglo[i].generation.name}</h5>
        <h4> CP: ${arreglo[i].stats ["max-cp"]}</h4>
        <h4> HP: ${arreglo[i].stats ["max-hp"]}</h4>
@@ -25,6 +26,7 @@ function mostrarPokemon(arreglo){
       <h3> WEAKNESSES ${arreglo[i].weaknesses}</h3>
       <h6> <img src="/egg-01.png" class="huevo">${arreglo[i].egg}</h6>
       <h6> <img src="/candy-02.png" class="caramelo">${arreglo[i].evolution.candy}</h6>
+      </section>
       </section>`}
 }
 mostrarPokemon(acortado)
