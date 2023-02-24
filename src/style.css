@@ -151,10 +151,27 @@ article {
 .pokemonArticulo h1 {
   color: black;
 }
-
-
-
-
+.noShow{
+  display: none;
+}
+.grass {
+  background-color: green;
+}
+.poison {
+  background-color: gray;
+}
+.water{
+  background-color: blue;
+}
+.fire{
+  background-color: orange;
+}
+.resistencia{
+  background-color: yellow;
+}
+.debilidad{
+  background-color: blueviolet;
+}
 @media (min-width: 768px) and (max-width:1000px) {
   .logo {
     display: flex;
