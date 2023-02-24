@@ -95,8 +95,8 @@ article {
   color: #C012B9;
 }
 .imagen{
-  width: 70%;
-  margin: 13% 3% 4% 12%;
+  width: 60%;
+  margin: 13% 3% 4% 17%;
 }
 .altura{
   font-weight: 600;
@@ -155,17 +155,187 @@ article {
   display: none;
 }
 .grass {
-  background-color: green;
+  background-color: #098236;
+    margin: 1% 1% 1% 1%;
+    border-radius: 10px;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    text-transform: capitalize;
+    font-size: 75%;
 }
 .poison {
-  background-color: gray;
+  background-color: #662F9C;
+    margin: 1% 1% 1% 1%;
+    border-radius: 10px;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    text-transform: capitalize;
+    font-size: 75%;
 }
 .water{
-  background-color: blue;
+  background-color: #1054E3;
+  margin: 1% 1% 1% 1%;
+  border-radius: 10px;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  text-transform: capitalize;
+  font-size: 75%;
 }
 .fire{
-  background-color: orange;
+  background-color: #FF4B59;
+  margin: 1% 1% 1% 1%;
+  border-radius: 10px;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  text-transform: capitalize;
+  font-size: 75%;
 }
+.flying{
+  background-color: #9AB9CE;
+  margin: 1% 1% 1% 1%;
+  border-radius: 10px;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  text-transform: capitalize;
+  font-size: 75%;
+}
+.normal{
+  background-color: #7F535E;
+  margin: 1% 1% 1% 1%;
+  border-radius: 10px;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  text-transform: capitalize;
+  font-size: 75%;
+}
+.ice{
+  background-color: #88DCEE;
+  margin: 1% 1% 1% 1%;
+  border-radius: 10px;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  text-transform: capitalize;
+  font-size: 75%;
+}
+.electric{
+  background-color: #F9FF6C;
+  margin: 1% 1% 1% 1%;
+  border-radius: 10px;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  text-transform: capitalize;
+  font-size: 75%;
+}
+.rock{
+  background-color: #864327;
+  margin: 1% 1% 1% 1%;
+  border-radius: 10px;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  text-transform: capitalize;
+  font-size: 75%;
+}
+.bug{
+  background-color: #3EA054;
+  margin: 1% 1% 1% 1%;
+  border-radius: 10px;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  text-transform: capitalize;
+  font-size: 75%;
+}
+.dark{
+  background-color: #5A5A78;
+  margin: 1% 1% 1% 1%;
+  border-radius: 10px;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  text-transform: capitalize;
+  font-size: 75%;
+}
+.dragon{
+  background-color: #60D5E8;
+  margin: 1% 1% 1% 1%;
+  border-radius: 10px;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  text-transform: capitalize;
+  font-size: 75%;
+}
+.fairy{
+  background-color: #A71545;
+  margin: 1% 1% 1% 1%;
+  border-radius: 10px;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  text-transform: capitalize;
+  font-size: 75%;
+}
+
+.fighting{
+  background-color: #BB380F;
+  margin: 1% 1% 1% 1%;
+  border-radius: 10px;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  text-transform: capitalize;
+  font-size: 75%;
+}
+.ghost{
+  background-color: #946997;
+  margin: 1% 1% 1% 1%;
+  border-radius: 10px;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  text-transform: capitalize;
+  font-size: 75%;
+}
+.ground{
+  background-color: #C1A077;
+  margin: 1% 1% 1% 1%;
+  border-radius: 10px;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  text-transform: capitalize;
+  font-size: 75%;
+}
+.psychic{
+  background-color: #FC1A91;
+  margin: 1% 1% 1% 1%;
+  border-radius: 10px;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  text-transform: capitalize;
+  font-size: 75%;
+}
+.steel{
+  background-color: #588372;
+  margin: 1% 1% 1% 1%;
+  border-radius: 10px;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  text-transform: capitalize;
+  font-size: 75%;
+}
+
 .resistencia{
   background-color: yellow;
 }
