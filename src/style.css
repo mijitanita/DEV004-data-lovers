@@ -2,7 +2,7 @@
 article {
   display: flex;
   flex-direction: row;
-  background-image: url(../fondo.jpg);
+  background-image: url(./imagenes/fondo.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -52,7 +52,7 @@ article {
   background-color: #8FFEBC;
     border-radius: 28px;
     width: 295px;
-    height: 417px;
+    height: 434px;
     font-family: 'Inter', sans-serif;
     margin: 1%;
     padding: 1%;
@@ -66,21 +66,94 @@ article {
 }
 .num{
   font-size: 90%;
+  padding: 3% 7% 5% 0%;
+}
+.nombre{
+  text-transform: capitalize;
+  padding: 0% 5% 5% 0%;
+  margin: -13% 1% 1% 0%;
+}
+.negrita{
+  font-weight: 900;
+}
+.generacionNumero{
+  font-weight: 600;
+    text-transform: capitalize;
+    margin: -6% 1% 1% 0%;
+}
+.generacionNombre{
+  font-weight: 600;
+    text-transform: capitalize;
+    margin: -1% 1% 1% 0%;
+}
+.cp{
+  margin: -23% -13% -5% 68%;
+  color: #C012B9;
+}
+.hp{
+  margin: 4% -14% -4% 68%;
+  color: #C012B9;
+}
+.imagen{
+  width: 70%;
+  margin: 13% 3% 4% 12%;
+}
+.altura{
+  font-weight: 600;
+  margin: -6% 1% 1% 14%;
+}
+.peso{
+  font-weight: 600;
+  margin: -6% 1% 1% 50%;
+}
+.tipo{
+  font-size: 15px;
+  margin: 1% 1% 1% 1%;
+  text-align: center;
+}
+.resistencia{
+  text-align: center;
+  font-size: small;
+  margin: -1% 1% 1% -3%;
+}
+.palabraResistant{
+    color: #3A5CA8;
+    text-align: center;
+    margin: -2% 1% 1% 1%;
+    font-size: 12px;
+}
+.debilidad{
+  text-align: center;
+    font-size: small;
+    margin: -1% 1% 1% 1%;
+}
+.palabraDebilidad{
+  color: #FE8FD2;
+    text-align: center;
+    margin: 2% 1% 1% 1%;
+    font-size: 12px;
+}
+.imagenHuevo{
+  margin: -13% 1% 1% 64%;
+  width: 7%;
+}
+.huevo{
+  margin: -18% 1% 1% 73%;
+}
+.caramelo{
+  width: 8%;
+  height: auto;
+  margin: -19% 1% 12% 1%;
+}
+.infoCaramelo{
+  margin: -30% 1% 9% 11%;
 }
 .pokemonArticulo h1 {
   color: black;
 }
 
 
-.cardImage .caramelo {
-  width: 20%;
-  height: auto;
-}
 
-.cardImage .huevo {
-  width: 20%;
-  height: auto;
-}
 
 @media (min-width: 768px) and (max-width:1000px) {
   .logo {
