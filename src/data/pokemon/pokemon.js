@@ -1,7 +1,7 @@
 export default {
   "pokemon": [{
     "num": "001",
-    "name": "bulbasaur",
+    "name": "prueba deploy",
     "generation": {
       "num": "generation i",
       "name": "kanto"

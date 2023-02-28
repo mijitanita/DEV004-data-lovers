@@ -1,7 +1,7 @@
 //import { example } from './data.js';
 
 import data from './data/pokemon/pokemon.js';
-// console.log(pokemon.pokemon)
+//console.log(data.pokemon)
 const acortado = data.pokemon.slice(0, 9);
 //console.log(acortado)
 
@@ -40,3 +40,15 @@ function mostrarPokemon(arreglo) {
 }
 mostrarPokemon(acortado)
 
+import filtroNombre from './data.js';
+function mostrarNombre(arreglo) {
+  const buscador = document.getElementById('buscador')
+  for (let i = 0; i < arreglo.length; i++) {
+
+    buscador.innerHTML += filtroNombre.document.addEventListener("keyup").value;
+  }
+  return mostrarNombre
+}
+//console.log(data.pokemon.name);
+//const nombreBuscado=document.getElementById("buscador").filtroNombre.value 
+// return (nombreBuscado)
