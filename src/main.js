@@ -40,8 +40,8 @@ function mostrarPokemon(arreglo) {
 }
 mostrarPokemon(acortado)
 
-import filtroNombre from './data.js';
-function mostrarNombre(arreglo) {
+import {filtroNombre} from './data.js';
+/*function mostrarNombre(arreglo) {
   const buscador = document.getElementById('buscador')
   for (let i = 0; i < arreglo.length; i++) {
 
