@@ -40,15 +40,9 @@ function mostrarPokemon(arreglo) {
 }
 mostrarPokemon(acortado)
 
-import {filtroNombre} from './data.js';
-/*function mostrarNombre(arreglo) {
-  const buscador = document.getElementById('buscador')
-  for (let i = 0; i < arreglo.length; i++) {
-
-    buscador.innerHTML += filtroNombre.document.addEventListener("keyup").value;
-  }
-  return mostrarNombre
-}
-//console.log(data.pokemon.name);
-//const nombreBuscado=document.getElementById("buscador").filtroNombre.value 
-// return (nombreBuscado)
+import {filtrarPokemon} from './data.js';
+const input = document.getElementById("buscador");
+input.addEventListener("keyup" ,function(){
+  const resultado = document.getElementById("buscador");
+} )
+;//console.log(filtrarPokemon);
