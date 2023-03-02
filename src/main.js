@@ -1,12 +1,13 @@
 //import { example } from './data.js';
 
 import data from './data/pokemon/pokemon.js';
-//console.log(data.pokemon)
-const acortado = data.pokemon.slice(0, 9);
-//console.log(acortado)
+import {filtrarPokemon} from './data.js';
+const arreglo = data.pokemon.slice(0, 9);
 
+const contenedorPokemon = document.getElementById('contenedorPokemon');
 function mostrarPokemon(arreglo) {
-  const contenedorPokemon = document.getElementById('contenedorPokemon')
+  contenedorPokemon.innerHTML=""
+  
   for (let i = 0; i < arreglo.length; i++) {
 
     contenedorPokemon.innerHTML +=
@@ -38,11 +39,13 @@ function mostrarPokemon(arreglo) {
   }
 
 }
-mostrarPokemon(acortado)
 
-import {filtrarPokemon} from './data.js';
 const input = document.getElementById("buscador");
-input.addEventListener("keyup" ,function(){
-  const resultado = document.getElementById("buscador");
-} )
-;//console.log(filtrarPokemon);
+input.addEventListener("change" ,function(){
+  const resultado = input.value
+  const resultadoFiltro= filtrarPokemon(arreglo,resultado);
+
+  mostrarPokemon(resultadoFiltro)
+})
+
+mostrarPokemon(arreglo);
