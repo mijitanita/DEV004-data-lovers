@@ -63,13 +63,19 @@ select.addEventListener("change", function () {
 
   mostrarPokemon(typeFiltro);
 });
-const ordenAscendente = document.getElementById("talla1");
-ordenAscendente.addEventListener("change", function () {
-  const resultadoAscendente = ordenAscendente.value;
-  const tallaAscendente = ordenar(arreglo, resultadoAscendente);
-  console.log(tallaAscendente);
-
-  mostrarPokemon(tallaAscendente);
+const ordenHeight = document.getElementById("altura");
+ordenHeight.addEventListener("change", function () {
+  const resultadoHeight = ordenHeight.value;
+  switch (resultadoHeight) {
+  case "1":
+    const alturaAscendente = ordenar(arreglo, 1);
+    mostrarPokemon(alturaAscendente);
+    break;
+  case "2":
+    const alturaDescendente = ordenar(arreglo, 2);
+    mostrarPokemon(alturaDescendente);
+    break;
+  }
 });
 
 mostrarPokemon(arreglo);
