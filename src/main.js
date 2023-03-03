@@ -1,7 +1,7 @@
 //import { example } from './data.js';
 
 import data from "./data/pokemon/pokemon.js";
-import { filtrarPokemon, filtrarTipo, ordenar } from "./data.js";
+import { filtrarPokemon, filtrarTipo, ordenar, ordenarCp } from "./data.js";
 
 const arreglo = data.pokemon.slice(0, 9);
 
@@ -63,7 +63,7 @@ select.addEventListener("change", function () {
 
   mostrarPokemon(typeFiltro);
 });
-const ordenHeight = document.getElementById("altura");
+const ordenHeight = document.getElementById("ordenar");
 ordenHeight.addEventListener("change", function () {
   const resultadoHeight = ordenHeight.value;
   switch (resultadoHeight) {
@@ -77,5 +77,18 @@ ordenHeight.addEventListener("change", function () {
     break;
   }
 });
-
+const ordenCp = document.getElementById("ordenar");
+ordenCp.addEventListener("change", function () {
+  const resultadoCp = ordenCp.value;
+  switch (resultadoCp) {
+  case "1":
+    const cpAscendente = ordenarCp(arreglo, 1);
+    mostrarPokemon(cpAscendente);
+    break;
+  case "2":
+    const cpDescendente = ordenarCp(arreglo, 2);
+    mostrarPokemon(cpDescendente);
+    break;
+  }
+});
 mostrarPokemon(arreglo);
