@@ -520,8 +520,7 @@ justify-content: space-around;
     color: #1D2C5E;
     font-size: 12px;
   }
-
-
+}
 @media only screen and (min-width:1024px) {
   .logo {
     display: flex;
@@ -533,7 +532,7 @@ justify-content: space-around;
 
   .ash {
     display: flex;
-    margin: 32% 5% 12% 9%;
+    margin: 32.5% 5% 12% 9%;
     z-index: 2;
     width: 90%;
     height: auto;
@@ -573,5 +572,52 @@ justify-content: space-around;
     background-color: rgba(255, 255, 255, .5);
     height: 153px;
     border-radius: 0 0 100% 0;
+  }
+  nav{
+    padding: 4% 1% 2% 4%;
+    background-color: #1D2C5E;
+  
+  }
+  #buscador {
+    margin: -2.5% 1% 1% -2%;
+    background-color: #efe6e6;
+    border-radius: 13px;
+    padding: 3px;
+}
+  
+  .tipos{
+   
+    margin: -5% 3% -2% 25%;
+    background-color: #1D2C5E;
+    padding: 1% 1% 1% 1%;
+    border-color: #1D2C5E;
+    color: white;
+  }
+  .resistant{
+   
+    margin: -4% 1% 0% 40%;
+    background-color: #1D2C5E;
+    padding: 1% 1% 1% 1%;
+    border-color: #1D2C5E;
+    color: white;
+  }
+  .weaknesses{
+  
+    margin: -4.3% 1% 0% 59%;
+    background-color: #1D2C5E;
+    padding: 1% 1% 1% 1%;
+    border-color: #1D2C5E;
+    color: white;
+}
+ 
+  
+  .ordenar{
+    
+    background-color: #76CDF4;
+    border-radius: 10px;
+    margin: -4.8% 1% 1% 82%;
+    width: 15%;
+    color: #1D2C5E;
+    font-size: 12px;
   }
 }
