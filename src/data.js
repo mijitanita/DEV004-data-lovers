@@ -11,6 +11,26 @@ export function filtrarTipo(arreglo, type) {
   return resultadotipo;
 }
 
+export function filtrarResistencia(arreglo, resistant) {
+  const resultadoResistant = arreglo.filter((elemento) =>
+    elemento.resistant.includes(resistant)
+  );
+  return resultadoResistant;
+}
+
+export function filtrarDebilidad(arreglo, weaknesses) {
+  const resultadoWeaknesses = arreglo.filter((elemento) =>
+    elemento.weaknesses.includes(weaknesses)
+  );
+  return resultadoWeaknesses;
+}
+
+
+
+
+
+
+
 
 
 export function ordenar(arreglo, option) {

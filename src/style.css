@@ -44,6 +44,55 @@ article {
   display: none;
 }
 
+nav{
+  padding: 2% 1% 4% 4%;
+  background-color: #1D2C5E;
+
+}
+#buscador {
+  margin: 1% 1% 1% 15%;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  background-color: #efe6e6;
+  border-radius: 10px;
+}
+.tipos{
+  display: flex;
+  margin: 0% 1% 1% 23%;
+  background-color: #1D2C5E;
+  padding: 1% 1% 1% 1%;
+  border-color: #1D2C5E;
+  color: white;
+}
+.resistant{
+  display: flex;
+  margin: 1% 1% 1% 18%;
+  background-color: #1D2C5E;
+  padding: 1% 1% 1% 1%;
+  border-color: #1D2C5E;
+  color: white;
+}
+.weaknesses{
+  display: flex;
+  margin: 1% 1% 1% 15%;
+  background-color: #1D2C5E;
+  padding: 1% 1% 1% 1%;
+  border-color: #1D2C5E;
+  color: white;
+}
+
+.ordenar{
+  display: flex;
+    background-color: #76CDF4;
+    border-radius: 10px;
+    margin: 1% 1% 1% 31%;
+    width: 34%;
+    color: #1D2C5E;
+    font-size: 12px;
+}
+
+
 #contenedorPokemon {
   display: flex;
   flex-wrap: wrap;
@@ -426,7 +475,52 @@ justify-content: space-around;
     height: 153px;
     border-radius: 0 0 100% 0;
   }
+  nav{
+    padding: 1% 1% 1% 4%;
+    background-color: #1D2C5E;
+  
+  }
+  #buscador {
+    margin: 1% 1% 1% -1%;
+    background-color: #efe6e6;
+    border-radius: 10px;
 }
+  
+  .tipos{
+   
+    margin: -6.5% 3% -2% 25%;
+    background-color: #1D2C5E;
+    padding: 1% 1% 1% 1%;
+    border-color: #1D2C5E;
+    color: white;
+  }
+  .resistant{
+   
+    margin: -5% 1% 0% 40%;
+    background-color: #1D2C5E;
+    padding: 1% 1% 1% 1%;
+    border-color: #1D2C5E;
+    color: white;
+  }
+  .weaknesses{
+  
+    margin: -5% 1% 0% 59%;
+    background-color: #1D2C5E;
+    padding: 1% 1% 1% 1%;
+    border-color: #1D2C5E;
+    color: white;
+  }
+  
+  .ordenar{
+    
+    background-color: #76CDF4;
+    border-radius: 10px;
+    margin: -6% 1% 1% 82%;
+    width: 15%;
+    color: #1D2C5E;
+    font-size: 12px;
+  }
+
 
 @media only screen and (min-width:1024px) {
   .logo {

@@ -1,7 +1,7 @@
 //import { example } from './data.js';
 
 import data from "./data/pokemon/pokemon.js";
-import { filtrarPokemon, filtrarTipo, ordenar, ordenarCp } from "./data.js";
+import { filtrarPokemon, filtrarTipo,filtrarResistencia,filtrarDebilidad, ordenar, ordenarCp } from "./data.js";
 
 const arreglo = data.pokemon.slice(0, 9);
 
@@ -63,6 +63,33 @@ select.addEventListener("change", function () {
 
   mostrarPokemon(typeFiltro);
 });
+
+const selectResistant = document.getElementById("resistant");
+selectResistant.addEventListener("change", function () {
+  const resultadoResistant = selectResistant.value;
+  const resistantFiltro = filtrarResistencia(arreglo, resultadoResistant);
+  console.log(resistantFiltro);
+
+  mostrarPokemon(resistantFiltro);
+});
+
+const selectWeaknesses = document.getElementById("weaknesses");
+selectWeaknesses.addEventListener("change", function () {
+  const resultadoWeaknesses = selectWeaknesses.value;
+  const weaknessesFiltro = filtrarDebilidad(arreglo, resultadoWeaknesses);
+  console.log(weaknessesFiltro);
+
+  mostrarPokemon(weaknessesFiltro);
+});
+
+
+
+
+
+
+
+
+
 const ordenHeight = document.getElementById("ordenar");
 ordenHeight.addEventListener("change", function () {
   const resultadoHeight = ordenHeight.value;
