@@ -1,7 +1,15 @@
 //import { example } from './data.js';
 
 import data from "./data/pokemon/pokemon.js";
-import { filtrarPokemon, filtrarTipo,filtrarResistencia,filtrarDebilidad, ordenar, ordenarCp } from "./data.js";
+import {
+  filtrarPokemon,
+  filtrarTipo,
+  filtrarResistencia,
+  filtrarDebilidad,
+  ordenar,
+  ordenarCp,
+  calculando,
+} from "./data.js";
 
 const arreglo = data.pokemon.slice(0, 9);
 
@@ -82,40 +90,43 @@ selectWeaknesses.addEventListener("change", function () {
   mostrarPokemon(weaknessesFiltro);
 });
 
-
-
-
-
-
-
-
-
 const ordenHeight = document.getElementById("ordenar");
 ordenHeight.addEventListener("change", function () {
   const resultadoHeight = ordenHeight.value;
   switch (resultadoHeight) {
-  case "1":
-    const alturaAscendente = ordenar(arreglo, 1);
-    mostrarPokemon(alturaAscendente);
-    break;
-  case "2":
-    const alturaDescendente = ordenar(arreglo, 2);
-    mostrarPokemon(alturaDescendente);
-    break;
+    case "1":
+      const alturaAscendente = ordenar(arreglo, 1);
+      mostrarPokemon(alturaAscendente);
+      break;
+    case "2":
+      const alturaDescendente = ordenar(arreglo, 2);
+      mostrarPokemon(alturaDescendente);
+      break;
   }
 });
+
 const ordenCp = document.getElementById("ordenar");
 ordenCp.addEventListener("change", function () {
   const resultadoCp = ordenCp.value;
   switch (resultadoCp) {
-  case "1":
-    const cpAscendente = ordenarCp(arreglo, 1);
-    mostrarPokemon(cpAscendente);
-    break;
-  case "2":
-    const cpDescendente = ordenarCp(arreglo, 2);
-    mostrarPokemon(cpDescendente);
-    break;
+    case "1":
+      const cpAscendente = ordenarCp(arreglo, 1);
+      mostrarPokemon(cpAscendente);
+      break;
+    case "2":
+      const cpDescendente = ordenarCp(arreglo, 2);
+      mostrarPokemon(cpDescendente);
+      break;
   }
 });
+
+const calcularPorcentaje = document.getElementById("calcular");
+calcularPorcentaje.addEventListener("change", function () {
+  const resultadoPorcentaje = calcularPorcentaje.value;
+  const calcularPokemon = calculando(arreglo, resultadoPorcentaje);
+  console.log(calcularPokemon);
+
+  alert("El porcentaje es:" + calcularPokemon.toFixed(2) + "%");
+});
+
 mostrarPokemon(arreglo);

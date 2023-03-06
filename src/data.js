@@ -24,37 +24,45 @@ export function filtrarDebilidad(arreglo, weaknesses) {
   );
   return resultadoWeaknesses;
 }
-
-
-
-
-
-
-
-
-
 export function ordenar(arreglo, option) {
-  const ordenarHeight = arreglo.sort((a, b) =>{
-    if(option=== 1){
+  const ordenarHeight = arreglo.sort((a, b) => {
+    if (option === 1) {
       //console.log(a.size.height.substr(0, a.size.height.length-1))//
-      return a.size.height.substr(0, a.size.height.length-1)- b.size.height.substr(0, b.size.height.length-1)
-    }else{
-      return b.size.height.substr(0, b.size.height.length-1)- a.size.height.substr(0, a.size.height.length-1)
+      return (
+        a.size.height.substr(0, a.size.height.length - 1) -
+        b.size.height.substr(0, b.size.height.length - 1)
+      );
+    } else {
+      return (
+        b.size.height.substr(0, b.size.height.length - 1) -
+        a.size.height.substr(0, a.size.height.length - 1)
+      );
     }
   });
   console.log(ordenarHeight);
   return ordenarHeight;
 }
 export function ordenarCp(arreglo, option) {
-  const ordenaCp = arreglo.sort((a, b) =>{
-    if(option=== 1){
+  const ordenaCp = arreglo.sort((a, b) => {
+    if (option === 1) {
       //console.log(a.size.height.substr(0, a.size.height.length-1))//
-      return a.stats["max-cp"]- b.stats["max-cp"]
-    }else{
-      return b.stats["max-cp"]- a.stats["max-cp"]
+      return a.stats["max-cp"] - b.stats["max-cp"];
+    } else {
+      return b.stats["max-cp"] - a.stats["max-cp"];
     }
   });
   console.log(ordenaCp);
   return ordenaCp;
 }
+export function calculando(arreglo, type) {
+  let contador = 0;
+  for (let i = 0; i < arreglo.length; i++) {
+    if (arreglo[i].type.includes(type)) {
+      contador++;
+    }
+  }
+  const calculando = (contador / arreglo.length) * 100;
 
+  console.log(calculando);
+  return calculando;
+}
