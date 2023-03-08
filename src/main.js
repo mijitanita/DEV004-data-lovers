@@ -22,26 +22,16 @@ function mostrarPokemon(arreglo) {
   <section class="rectanguloInterno">
        <h5 class="num">${arreglo[i].num}</h5>
        <h1 class="nombre">${arreglo[i].name}</h1>
-       <h5 class="generacionNumero"> <span class="negrita">Num: </span>${
-         arreglo[i].generation.num
-       }</h5>
-       <h5 class="generacionNombre"> <span class="negrita">Name:</span>${
-         arreglo[i].generation.name
-       }</h5>
+       <h5 class="generacionNumero"> <span class="negrita">Num: </span>${arreglo[i].generation.num}</h5>
+       <h5 class="generacionNombre"> <span class="negrita">Name:</span>${arreglo[i].generation.name}</h5>
        <h4 class="cp"> CP: ${arreglo[i].stats["max-cp"]}</h4>
        <h4 class="hp"> HP: ${arreglo[i].stats["max-hp"]}</h4>
        <img src="${arreglo[i].img}" alt="" class="imagen">
-       <h6 class="altura"> <span class="negrita">Height: </span> ${
-         arreglo[i].size.height
-       }</h6>
-       <h6 class="peso"> <span class="negrita">Weight:</span> ${
-         arreglo[i].size.weight
-       }</h6>
+       <h6 class="altura"> <span class="negrita">Height: </span> ${arreglo[i].size.height}</h6>
+       <h6 class="peso"> <span class="negrita">Weight:</span> ${arreglo[i].size.weight}</h6>
        <section class="tiposPokemon">
        <h4 class="${arreglo[i].type[0]}">${arreglo[i].type[0]}</h4>
-      <h4 class="${
-        arreglo[i].type[1] === undefined ? "noShow" : arreglo[i].type[1]
-      }" >${arreglo[i].type[1]}</h4>
+      <h4 class="${arreglo[i].type[1] === undefined ? "noShow" : arreglo[i].type[1]}" >${arreglo[i].type[1]}</h4>
       </section>
       <h5 class="palabraResistant">RESISTANT</h5>
       <h3 class="resistencia"> ${arreglo[i].resistant.join(" | ")}</h3>
@@ -67,7 +57,7 @@ const select = document.getElementById("tipos");
 select.addEventListener("change", function () {
   const resultadotipo = select.value;
   const typeFiltro = filtrarTipo(arreglo, resultadotipo);
-  console.log(typeFiltro);
+
 
   mostrarPokemon(typeFiltro);
 });
@@ -76,7 +66,7 @@ const selectResistant = document.getElementById("resistant");
 selectResistant.addEventListener("change", function () {
   const resultadoResistant = selectResistant.value;
   const resistantFiltro = filtrarResistencia(arreglo, resultadoResistant);
-  console.log(resistantFiltro);
+
 
   mostrarPokemon(resistantFiltro);
 });
@@ -85,7 +75,7 @@ const selectWeaknesses = document.getElementById("weaknesses");
 selectWeaknesses.addEventListener("change", function () {
   const resultadoWeaknesses = selectWeaknesses.value;
   const weaknessesFiltro = filtrarDebilidad(arreglo, resultadoWeaknesses);
-  console.log(weaknessesFiltro);
+
 
   mostrarPokemon(weaknessesFiltro);
 });
@@ -94,14 +84,16 @@ const ordenHeight = document.getElementById("ordenar");
 ordenHeight.addEventListener("change", function () {
   const resultadoHeight = ordenHeight.value;
   switch (resultadoHeight) {
-    case "1":
-      const alturaAscendente = ordenar(arreglo, 1);
-      mostrarPokemon(alturaAscendente);
-      break;
-    case "2":
-      const alturaDescendente = ordenar(arreglo, 2);
-      mostrarPokemon(alturaDescendente);
-      break;
+  case "1": {
+    const alturaAscendente = ordenar(arreglo, 1);
+    mostrarPokemon(alturaAscendente);
+    break;
+  }
+  case "2": {
+    const alturaDescendente = ordenar(arreglo, 2);
+    mostrarPokemon(alturaDescendente);
+    break;
+  }
   }
 });
 
@@ -109,14 +101,16 @@ const ordenCp = document.getElementById("ordenar");
 ordenCp.addEventListener("change", function () {
   const resultadoCp = ordenCp.value;
   switch (resultadoCp) {
-    case "1":
-      const cpAscendente = ordenarCp(arreglo, 1);
-      mostrarPokemon(cpAscendente);
+  case "1": {
+    const cpAscendente = ordenarCp(arreglo, 1);
+    mostrarPokemon(cpAscendente);
       break;
-    case "2":
+    }
+    case "2": {
       const cpDescendente = ordenarCp(arreglo, 2);
       mostrarPokemon(cpDescendente);
       break;
+    }
   }
 });
 

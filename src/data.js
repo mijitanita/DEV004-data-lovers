@@ -39,7 +39,7 @@ export function ordenar(arreglo, option) {
       );
     }
   });
-  console.log(ordenarHeight);
+  
   return ordenarHeight;
 }
 export function ordenarCp(arreglo, option) {
@@ -51,7 +51,7 @@ export function ordenarCp(arreglo, option) {
       return b.stats["max-cp"] - a.stats["max-cp"];
     }
   });
-  console.log(ordenaCp);
+  
   return ordenaCp;
 }
 export function calculando(arreglo, type) {
@@ -63,6 +63,6 @@ export function calculando(arreglo, type) {
   }
   const calculando = (contador / arreglo.length) * 100;
 
-  console.log(calculando);
+  
   return calculando;
 }
