@@ -11,7 +11,7 @@ import {
   calculando,
 } from "./data.js";
 
-const arreglo = data.pokemon.slice(0, 9);
+const arreglo = data.pokemon;
 
 const contenedorPokemon = document.getElementById("contenedorPokemon");
 function mostrarPokemon(arreglo) {
