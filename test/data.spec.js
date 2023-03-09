@@ -72,7 +72,7 @@ describe('ordenarCp', () => {
 
   it('returns `ordenarCp`', () => {
     const filtradosOrdenarCP= ordenarCp(data.pokemon,'1115')
-    expect(filtradosOrdenarCP[0].stats.max-cp).toBe('1115');
+    expect(filtradosOrdenarCP[0].stats["max-cp"]).toBe('1115');
   });
 });
 
@@ -83,7 +83,7 @@ describe('calculando', () => {
   });
 
   it('returns `calculando`', () => {
-    const filtradosCalculando= calculando(data.pokemon,'33.33%')
-    expect(filtradosCalculando[0].grass).toBe('33.33%');
+    const filtradosCalculando= calculando(data.pokemon,'grass')
+    expect(filtradosCalculando).toBe(9.56175298804781);
   });
 });
