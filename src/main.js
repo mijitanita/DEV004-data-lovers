@@ -10,7 +10,7 @@ import {
   calculando,
 } from "./data.js";
 
-const arreglo = data.pokemon.slice(0, 9);
+const arreglo = data.pokemon;
 
 const contenedorPokemon = document.getElementById("contenedorPokemon");
 function mostrarPokemon(arreglo) {
@@ -98,11 +98,24 @@ ordenCp.addEventListener("change", function () {
 
 const calcularPorcentaje = document.getElementById("calcular");
 calcularPorcentaje.addEventListener("change", function () {
+  
   const resultadoPorcentaje = calcularPorcentaje.value;
   const calcularPokemon = calculando(arreglo, resultadoPorcentaje);
   console.log(calcularPokemon);
 
   alert("El porcentaje es:" + calcularPokemon.toFixed(2) + "%");
 });
+console.log(calcularPorcentaje)
+
+const calcularPorcentaje2 = document.getElementById("calcular2");
+calcularPorcentaje2.addEventListener("change", function () {
+  
+  const resultadoPorcentaje2 = calcularPorcentaje2.value;
+  const calcularPokemon2 = calculando(arreglo, resultadoPorcentaje2);
+  console.log(calcularPokemon2);
+
+  alert("El porcentaje es:" + calcularPokemon2.toFixed(2) + "%");
+});
+console.log(calcularPorcentaje2)
 
 mostrarPokemon(arreglo);
