@@ -53,29 +53,32 @@ describe('filtrarDebilidad', () => {
 });
 
 
-describe('ordenar', () => {
-  it('is a function', () => {
-    expect(typeof ordenar).toBe('function');
-  });
-
-  it('returns `ordenar`', () => {
-    const filtradosOrdenar = ordenar(data.pokemon,'0.71 m')
-    expect(filtradosOrdenar[0].size.height).toBe('0.71 m');
-  });
-});
-
-
 describe('ordenarCp', () => {
   it('is a function', () => {
     expect(typeof ordenarCp).toBe('function');
   });
 
   it('returns `ordenarCp`', () => {
-    const filtradosOrdenarCP= ordenarCp(data.pokemon,'1115')
-    expect(filtradosOrdenarCP[0].stats["max-cp"]).toBe('1115');
+    const filtradosOrdenarCP= ordenarCp(data.pokemon,'4178')
+    expect(filtradosOrdenarCP[0].stats["max-cp"]).toBe('4178');
   });
 });
 
+describe('ordenarCp', () => {
+  const arreglo = [    { stats: { "max-cp": 100 } },    { stats: { "max-cp": 50 } },    { stats: { "max-cp": 75 } },  ];
+  it('devuelve un arreglo ordenado de menor a mayor max-cp cuando se proporciona una opción de 1', () => {
+    const option = 1;
+    const ordenado = ordenarCp(arreglo, option);
+    const resultadoEsperado = [      { stats: { "max-cp": 50 } },      { stats: { "max-cp": 75 } },      { stats: { "max-cp": 100 } },    ];
+    expect(ordenado).toEqual(resultadoEsperado);
+  });
+  it('devuelve un arreglo ordenado de mayor a menor max-cp cuando se proporciona una opción distinta de 1', () => {
+    const option = 2;
+    const ordenado = ordenarCp(arreglo, option);
+    const resultadoEsperado = [      { stats: { "max-cp": 100 } },      { stats: { "max-cp": 75 } },      { stats: { "max-cp": 50 } },    ];
+    expect(ordenado).toEqual(resultadoEsperado);
+  });
+});
 
 describe('calculando', () => {
   it('is a function', () => {

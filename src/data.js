@@ -24,24 +24,7 @@ export function filtrarDebilidad(arreglo, weaknesses) {
   );
   return resultadoWeaknesses;
 }
-export function ordenar(arreglo, option) {
-  const ordenarHeight = arreglo.sort((a, b) => {
-    if (option === 1) {
-      //console.log(a.size.height.substr(0, a.size.height.length-1))//
-      return (
-        a.size.height.substr(0, a.size.height.length - 1) -
-        b.size.height.substr(0, b.size.height.length - 1)
-      );
-    } else {
-      return (
-        b.size.height.substr(0, b.size.height.length - 1) -
-        a.size.height.substr(0, a.size.height.length - 1)
-      );
-    }
-  });
-  
-  return ordenarHeight;
-}
+
 export function ordenarCp(arreglo, option) {
   const ordenaCp = arreglo.sort((a, b) => {
     if (option === 1) {

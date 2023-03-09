@@ -6,7 +6,6 @@ import {
   filtrarTipo,
   filtrarResistencia,
   filtrarDebilidad,
-  ordenar,
   ordenarCp,
   calculando,
 } from "./data.js";
@@ -78,23 +77,6 @@ selectWeaknesses.addEventListener("change", function () {
 
 
   mostrarPokemon(weaknessesFiltro);
-});
-
-const ordenHeight = document.getElementById("ordenar");
-ordenHeight.addEventListener("change", function () {
-  const resultadoHeight = ordenHeight.value;
-  switch (resultadoHeight) {
-  case "1": {
-    const alturaAscendente = ordenar(arreglo, 1);
-    mostrarPokemon(alturaAscendente);
-    break;
-  }
-  case "2": {
-    const alturaDescendente = ordenar(arreglo, 2);
-    mostrarPokemon(alturaDescendente);
-    break;
-  }
-  }
 });
 
 const ordenCp = document.getElementById("ordenar");
