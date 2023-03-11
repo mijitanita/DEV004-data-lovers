@@ -718,4 +718,131 @@ justify-content: space-around;
     font-weight: 600;
 }
   }
+
+  @media only screen and (min-width:1366px) {
+    .logo {
+      display: flex;
+    width: 91%;
+    height: auto;
+    margin: -1% -7%;
+    align-items: center;
+    }
+  
+    .ash {
+      display: flex;
+    margin: 21.5% 5% 12% 9%;
+    z-index: 2;
+    width: 62%;
+    height: auto;
+    }
+  
+     .palabra1 {
+      display: flex;
+      font-size: 13px;
+      font-family: "Jost";
+      color: #3A5CA8;
+      font-weight: bold;
+      margin: 12% 5%;
+    }
+  
+    .palabra2 {
+      display: flex;
+    width: 162px;
+    margin: 37% -171%;
+    }
+  
+    .palabra3 {
+      display: flex;
+      font-size: 20px;
+      font-family: "Jost";
+      color: #3A5CA8;
+      font-weight: 900;
+      margin: 0% 5%;
+  }
+  .palabra1movil {
+    display: none;
+  }
+  .palabra2movil{
+    display: none;
+  }
+  .palabra3movil{
+    display: none;
+  }
+    .bienvenida {
+      display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    max-width: 40%;
+    width: 1648px;
+    background-color: rgba(255, 255, 255, .5);
+    height: 209px;
+    border-radius: 0 0 228% 0;
+    }
+    .bienvenida2{
+      display: none;
+    }
+    .calcular{
+      display: flex;
+      background-color: #1D2C5E;
+      border-radius: 10px;
+      margin: 1% 1% 1% 8%;
+      width: 41%;
+      color: white;
+      font-size: 11px;
+      padding: 1%;
+      font-weight: 600;
+    
+    }
+    .calcular2{
+      display: none;
+    }
+    nav{
+      padding: 4% 1% 2% 4%;
+      background-color: #1D2C5E;
+    
+    }
+    #buscador {
+      margin: -2.7% 1% -6% -2%;
+    background-color: #efe6e6;
+    border-radius: 58px;
+    padding: 7px;
+    width: 20%;
+  }
+    
+    .tipos{
+      margin: 2.9% 3% -2% 20%;
+    background-color: #1D2C5E;
+    padding: 1% 1% 1% 1%;
+    border-color: #1D2C5E;
+    color: white;
+    font-size: 20px;
+    }
+    .resistant{
+      margin: -3.9% 1% 0% 35%;
+    background-color: #1D2C5E;
+    padding: 1% 1% 1% 1%;
+    border-color: #1D2C5E;
+    color: white;
+    font-size: 20px;
 }
+    
+     .weaknesses{
+      margin: -4.25% 1% -2% 53%;
+    background-color: #1D2C5E;
+    padding: 1% 1% 1% 1%;
+    border-color: #1D2C5E;
+    color: white;
+    font-size: 20px;
+  } 
+    .ordenar{
+      background-color: #76CDF4;
+    border-radius: 36px;
+    margin: -4.5% 1% 1% 72%;
+    width: 18%;
+    color: #1D2C5E;
+    font-size: 17px;
+    padding: 0.3%;
+    font-weight: 600;
+  }
+} 
